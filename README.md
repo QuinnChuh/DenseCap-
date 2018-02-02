@@ -59,4 +59,29 @@ th run_model.lua -input_image imgs/elephant.png -gpu -1
 
 ![微信图片_20180201095613](D:\龙马智芯\Intership\question\imgs\微信图片_20180201095613.jpg)
 
-不知道问题在哪里？重装过libpng，但还是一样的效果，请老师看看是什么问题。
+#### 2018-2-2更新
+
+我利用下面的命令去查找报错的原因
+
+```
+grep "could not be opened for writing" -r /home/quinn/torch
+```
+
+结果发现了问题所在的地方，在我的/home/quinn/torch/pkg/image/generic/png.c文件下。
+
+我打开这个文件，找到相对应的错误输出，发现是
+
+```
+fp=fopen(file_name, "wb")
+```
+
+这里出了问题。
+
+这里我百度了一下，找到相关的内容，说道可能是文件权限没有打开，所以我查了一下我测试照片的权限
+
+在终端中输入下面的命令，发现我的图片只能是根用户能打开
+
+image
+
+后来我发现，我是在外部的机械硬盘上运行程序的，我没有权限去写里面的文件，所以，我把整个工程都靠到了我ubuntu的系统盘，结果发现就有权限了，得出最后的测试结果。
+
