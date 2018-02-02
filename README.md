@@ -43,7 +43,7 @@ luarocks install nngraph
 th run_model.lua -input_image imgs/elephant.jpg -gpu -1
 ```
 
-![微信图片_20180201095610](D:\龙马智芯\Intership\question\imgs\微信图片_20180201095610.jpg)
+![微信图片_20180201095610](https://github.com/QuinnChuh/DenseCap_demo_question/blob/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180201095610.jpg?raw=true)
 
 便出现了上面的问题。
 
@@ -57,7 +57,7 @@ th run_model.lua -input_image imgs/elephant.png -gpu -1
 
 出现了下面的错误
 
-![微信图片_20180201095613](D:\龙马智芯\Intership\question\imgs\微信图片_20180201095613.jpg)
+![微信图片_20180201095613](https://github.com/QuinnChuh/DenseCap_demo_question/blob/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180201095613.jpg?raw=true)
 
 #### 2018-2-2更新
 
@@ -84,4 +84,6 @@ fp=fopen(file_name, "wb")
 ![](https://github.com/QuinnChuh/DenseCap_demo_question/blob/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180202094717.png?raw=true)
 
 后来我发现，我是在外部的机械硬盘上运行程序的，我没有权限去写里面的文件，所以，我把整个工程都靠到了我ubuntu的系统盘，结果发现就有权限了，得出最后的测试结果。
+![](https://github.com/QuinnChuh/DenseCap_demo_question/blob/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180202094723.jpg?raw=true)
+![](https://github.com/QuinnChuh/DenseCap_demo_question/blob/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180202094731.jpg?raw=true)
 
