@@ -81,7 +81,7 @@ fp=fopen(file_name, "wb")
 
 在终端中输入下面的命令，发现我的图片只能是根用户能打开
 
-image
+![](https://github.com/QuinnChuh/DenseCap_demo_question/blob/master/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180202094717.png?raw=true)
 
 后来我发现，我是在外部的机械硬盘上运行程序的，我没有权限去写里面的文件，所以，我把整个工程都靠到了我ubuntu的系统盘，结果发现就有权限了，得出最后的测试结果。
 
